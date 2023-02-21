@@ -113,7 +113,7 @@ function date5(myDays) {
   const ele = document.getElementsByClassName(value);
   const allEle = document.getElementsByClassName("sel");
   const all = document.getElementsByClassName("date-picker");
-  if (value >= myDays || value < 1) {
+  if (value > myDays || value < 1) {
     alert("Please enter a valid date!");
   }
   if (all[value - 1].innerHTML == value && allEle.length >= 1) {
